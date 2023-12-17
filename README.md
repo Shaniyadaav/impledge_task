@@ -18,3 +18,33 @@ This Python script identifies compound words from a list of words provided in te
 
 ```bash
 python compound_word_finder.py
+
+## Overview
+
+The script identifies compound words within text files, displaying the longest and second-longest compound words along with processing times.
+
+## Design Decisions and Approach
+
+### Design
+The program is divided into key components:
+- File Reading
+- Compound Word Identification
+- Finding Longest Compounds
+- Processing Input Files
+
+### Functionality Breakdown:
+- *File Reading*: Reads a text file with word lists, returning them as lists.
+- *Compound Word Identification*: Divides words into prefixes and suffixes, checking their existence in a set of words.
+- *Finding Longest Compounds*: Identifies the two longest compound words from a list of identified compounds.
+- *Processing Input Files*: Reads input files, identifies compound words, finds the longest and second-longest compound words, and measures processing time.
+
+### Approach:
+- *Two Methods*: Offers Trie-based and Set-based approaches for compound word identification.
+- *Efficiency*: Utilizes recursion and data structure optimization for quicker lookups.
+
+### Further Improvements:
+- Enhancements using multithreading/multiprocessing for larger datasets.
+- Experimentation with different data structures/algorithms for better efficiency.
+
+This script serves as a foundation for identifying compound words within a list and can be extended or optimized based on specific requirements or larger datasets.
+
